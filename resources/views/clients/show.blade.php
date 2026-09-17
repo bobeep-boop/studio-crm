@@ -89,6 +89,12 @@
                     <i data-lucide="mail" style="color:var(--text-muted); width:18px"></i>
                     <span style="font-size:0.9rem">{{ $client->email }}</span>
                 </div>
+              <div style="display:flex; align-items:center; gap:0.75rem">
+        <i data-lucide="contact" style="color:var(--text-muted); width:18px"></i>
+        <span style="font-size:0.9rem">
+            Emergency Contact: {{ $client->emergency_contact ?? 'Not Provided' }}
+        </span>
+    </div>   
                 <div style="display:flex; align-items:center; gap:0.75rem">
                     <i data-lucide="phone" style="color:var(--text-muted); width:18px"></i>
                     <span style="font-size:0.9rem">{{ $client->phone ?? 'No Phone' }}</span>

@@ -26,6 +26,7 @@ class Client extends Authenticatable
         'allergies',
         'photo_url',
         'notes',
+        'emergency_contact',
     ];
 
     protected $hidden = [
