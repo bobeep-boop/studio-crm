@@ -101,4 +101,11 @@ class ClientController extends Controller
         $forms = Form::where('client_id', $id)->orderBy('signed_at', 'desc')->get();
         return response()->json($forms);
     }
+
+     public function active()
+{
+    $clients = Client::whereNotNull('email')->get();
+    
+    return view('clients.active', compact('clients'));
+}
 }

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Client;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ClientController;
 use App\Models\Appointment;
 use App\Models\Financial;
 use App\Models\Staff;
@@ -144,6 +145,10 @@ Route::middleware(['auth.session'])->group(function () {
         session()->flush();
         return redirect()->route('dashboard');
     })->name('logout');
+
+    // Active Clients Route
+    Route::get('/clients/active', [ClientController::class, 'active'])
+        ->name('clients.active');
 
     // Appointment Routes
     Route::get('/appointments', function () {
