@@ -27,7 +27,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'client_id' => 3, 'staff_id' => 4, 'appointment_id' => 3,
-                'type' => 'consultation', 'body_location' => 'Full Back',
+                'type' => 'tattoo', 'body_location' => 'Full Back',
                 'machine_tools' => 'Digital Sketch',
                 'materials_used' => 'Consultation Forms',
                 'price' => 0.00, 'days' => -2

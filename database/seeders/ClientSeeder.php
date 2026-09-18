@@ -81,7 +81,7 @@ class ClientSeeder extends Seeder
                 'medical_history' => null,
             ],
             [
-                'name' => 'Ryan O'Brien',
+                'name' => "Ryan O'Brien",
                 'email' => 'ryan.ob@email.com',
                 'phone' => '+1 555-0108',
                 'profession' => 'Electrician',
